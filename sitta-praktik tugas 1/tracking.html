@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking Pengiriman</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <img src="img/logoUT.png" alt="Logo UT">
+    <h1>Tracking Pengiriman</h1>
+  </header>
+
+  <main class="tracking-main">
+    <input type="text" id="resi" value="0923478623" placeholder="Tuliskan nomor resi">
+    <button onclick="cariResi()">Cari</button>
+
+    <div id="hasilTracking" class="hidden tracking-result">
+      <h3>Informasi Pengiriman</h3>
+      <p><strong>Nomor Resi:</strong> 0923478623</p>
+      <p><strong>Asal:</strong> Jakarta</p>
+      <p><strong>Tujuan:</strong> Jember, Jawa Timur</p>
+      <p><strong>Estimasi sampai:</strong> 2 November 2025</p>
+      <hr>
+      <ul class="timeline">
+        <li><span class="tgl">15 Okt 2025</span> Pembayaran diterima, pesanan dikonfirmasi.</li>
+        <li><span class="tgl">16 Okt 2025</span> Paket diterima di gudang utama (Jakarta).</li>
+        <li><span class="tgl">20 Okt 2025</span> Paket dikirim menuju kota tujuan (Jember).</li>
+        <li><span class="tgl">28 Okt 2025</span> Paket tiba di gudang cabang Jember.</li>
+        <li><span class="tgl">1 Nov 2025</span> Paket diantar ke alamat tujuan.</li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

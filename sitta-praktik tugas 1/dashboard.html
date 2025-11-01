@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard UT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <img src="img/logoUT.png" alt="Logo UT">
+    <h1>Dashboard UT</h1>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="greeting">
+      <h2>Selamat pagi, Melinda Pebrianti! Selamat datang di dashboard UT.</h2>
+      <p>Pilih menu di bawah untuk melihat informasi bahan ajar anda.</p>
+    </div>
+
+    <div class="menu-grid">
+      <button onclick="showSection('laporan')">Laporan</button>
+      <button onclick="showSection('histori')">Histori Transaksi</button>
+      <button onclick="window.location.href='tracking.html'">Tracking</button>
+      <button onclick="window.location.href='stok.html'">Stok Bahan Ajar</button>
+    </div>
+
+    <div id="laporan" class="section hidden">
+      <h3>Laporan Pengiriman</h3>
+      <p>Buku dalam proses pengiriman.</p>
+    </div>
+
+    <div id="histori" class="section hidden">
+      <h3>Histori Transaksi</h3>
+      <table class="table-transaksi">
+        <thead>
+          <tr>
+            <th>Jumlah Transaksi</th>
+            <th>Tanggal</th>
+            <th>Status</th>
+            <th>Nomor Resi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rp1.200.000</td>
+            <td>15 Oktober 2025</td>
+            <td>Sudah dibayarkan</td>
+            <td>0923478623</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
